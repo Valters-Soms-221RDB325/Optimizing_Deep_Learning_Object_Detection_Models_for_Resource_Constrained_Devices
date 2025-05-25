@@ -4,9 +4,8 @@ import torch
 import os
 
 def main():
-    model_name = 'yolo11n.pt'
+    model_name = 'yolo11l.pt'
     data_config = 'voc_config.yaml'
-
     epochs = 200
     img_size = 320
     batch_size = 16
@@ -20,7 +19,7 @@ def main():
     device_id = 0
     num_workers = 8
     project_name = 'runs/detect'
-    run_name = 'train_yolo11n_sgd_aug_full'
+    run_name = 'train_yolo11l_sgd'
     save_period_val = 5
     training_seed = 42
 
